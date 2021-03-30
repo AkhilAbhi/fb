@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style type="text/css">
+        
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .hed{background: #91E6FF;
+                width: 100% ;
+                height: 100px;
+                padding-top: 20px;
+        }
+        .hed h2{
+            text-align: center;
+        }
+        
+        .rs{
+            margin-top: 30px;
+            font-size: 30px;
+            margin-left: 10px;
+        }
+        .rs2{
+            color: #0066FF;
+        }
+        .daing{
+            color: red;
+        }
+        
+        .referel{
+            background: #023E05;
+            margin-top: 10px;
+            padding-top: 10px;
+            width: 90%;
+            border-radius: 10px;
+            margin-left: 5%;
+            border: 1px solid #1EFF00;
+            height: 100px;
+        }
+        .referel h2{
+            color: white;
+            text-align: center;
+        }
+        .referel button{
+            text-align: center;
+            width: 80%;
+            margin-top: 10px;
+            background: #91E6FF;
+            margin-left: 10%;
+            height: 30px;
+            border: 1px solid #91E6FF;
+            border-radius: 5px;
+        }
+        .referel button:hover{
+            background: green;
+            color: white;
+            font-weight: bold;
+        }
+        .withdraw{
+            background: #91E6FF;
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 20%;
+            text-align: center;
+            padding-top: 5px;
+            border: 2px solid blue;
+            border-radius: 10px;
+            height: 60px;
+        }
+        .withdraw h1{
+            
+            margin-top: 10px;
+        }
+        .pop1{
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            display: none;
+            background: rgba(0,0,0,0.7);
+        }
+        .fa-close{
+            font-size: 30px;
+            color: white;
+            margin-left: 10px;
+            margin-top: 5px;
+        }
+        img{
+            width: 30%;
+        }
+        .pay{
+            background: white;
+            width: 70%;
+            margin-left: 15%;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .pop1 h3 {
+            color: #04C200;
+            margin-left: 20px;
+            
+        }
+        .paytm {
+            margin-top: 5%;
+            
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .gpay{
+            margin-top: 10px;
+        }
+        #alt {
+            color: red;
+            font-size: 20px;
+            margin-top: 30%;
+            display: none;
+        }
+        .back {
+            background: #1EFF00;
+            width: 50%;
+            height: 30px;
+            text-align: center;
+            margin-left: 25%;
+            margin-top: 20px;
+            padding-top: 10px;
+            border-radius: 20px;
+        }
+        .back:hover{
+            background: #C4FF00;
+            color: #FF3500;
+            font-weight: bold;
+            border: 2px solid #0007FF;
+        }
+    </style>
+    
+    
+    
+    
+        <title>Wallet</title>
+        
+    </head>
+    <body>
+        
+        
+        
+        <div id="pop1" class="pop1">
+            <i onclick="clos()" class="fa fa-close"></i>
+            
+            
+            <h3>select your platform </h3>
+            <p id="alt">sory your withdraw is not working please complete 5 days task.....</p>
+            
+            <div class="popMenu">
+                
+                
+                <div class="paytm pay">
+                    
+                <img onclick="altr()" src="https://cdn.iconscout.com/icon/free/png-512/paytm-226448.png" alt="" />
+                
+                    
+                    
+                    
+                </div>
+                
+                
+                <div class="gpay pay">
+                    
+                    
+                  <img onclick="altr()" src="https://cdn.iconscout.com/icon/free/png-512/google-pay-2038779-1721670.png" alt="" />
+                    
+                </div>
+
+                
+                
+              
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        <div class="hed">
+            <h2>Your Wallet</h2>
+            <i class="fa fa-rupee rs"></i><i class="rs rs2">{{cs}}</i>
+        </div>
+        
+        <div class="referel">
+            <h2>referral link</h2>
+            <p class="daing">complete 5 days task</p>
+            <button onclick="button()">click to copy</button>
+        </div>
+        
+        <div onclick="withdraw()" class="withdraw">
+            <h1>withdraw</h1>
+        </div>
+        
+        <a href="/">
+        
+        <div class="back">
+        <h3>back</h3>
+        </div>
+        
+        </a>
+        
+        
+        
+        <script type="text/javascript" charset="utf-8">
+            
+            function button(){
+                alert("sory your referral link is not redy please complete 5 days task")
+            }
+            
+            function altr(){
+                document.getElementById('alt').style.display="block"
+            }
+            
+            function withdraw(){
+                document.getElementById("pop1").style.display="block"
+            }
+            function clos(){
+                document.getElementById("pop1").style.display="none"
+            }
+        </script>
+        
+        
+    </body>
+</html>

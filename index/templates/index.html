@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    
+    
+        <title></title>
+        
+        
+        
+        <style type="text/css" media="all">
+            *{
+                padding: 0px;
+                margin: 0px;
+            }
+            a{
+                text-decoration: none;
+            }
+            .hed{
+                background: #91E6FF;
+                width: 100% ;
+                height: 50px;
+                padding-top: 20px;
+            }
+            
+            
+            .hed ul li {
+                 display: inline;
+                }
+            
+            .hedLi{
+                font-size: 25px;
+                font-weight: bold;
+                margin-left: 34%;
+            }
+            .account{
+                font-size: 30px;
+                margin-left: 29%;
+                color: red;
+            }
+            .pop1{
+                width: 100vw;
+                height: 100vh;
+                background: rgba(0,0,0,0.4);
+                position: fixed;
+                text-align: center;
+            }
+            .pop2{
+                width: 100vw;
+                height: 100vh;
+                display: none;
+                background: rgba(0,0,0,0.4);
+                position: fixed;
+                
+            }
+            .pop3{
+                width: 100vw;
+                height: 100vh;
+                display: none;
+                background: rgba(0,0,0,0.4);
+                position: fixed;
+            }
+            
+            .popMenu{
+                background: #FFFFFF;
+                width: 80% ;
+                height: 450px;
+                margin-left: 10%;
+                margin-top: 50px;
+                padding-top: 20px;
+                border-radius: 15px;
+            }
+            .pop1 .popMenu h2{
+                color: green;
+                font-size: 30px;
+            }
+            
+            .crt{
+                font-size: 15px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            #name ,#number ,#email ,#LoginEmail{
+                background: #00FFFF;
+                margin-top: 5px;
+                width: 80%;
+                height: 30px;
+                border: 1px solid #00B2B2;
+                border-radius: 10px;
+            }
+            #create{
+                width: 80%;
+                height: 30px;
+                background: #30B3FF;
+                border: 2px solid #0060FF;
+                border-radius: 10px;
+                margin-top: 15px;
+                font-size: 20px;
+            }
+            #login{
+                width: 80%;
+                height: 30px;
+                background:#28FF00;
+                border: 2px solid green;
+                border-radius: 10px;
+                margin-top: 15px;
+                font-size: 20px;
+            }
+            .chek{
+                font-size: 1px;
+            }
+            .popMenu2{
+                text-align: center;
+                width: 50%;
+                height: 100px;
+                background: white;
+                margin-left: 25%;
+                margin-top: 200px;
+                border-radius: 15px;
+            }
+            .popMenu2 button{
+                background: #E04D57;
+                width: 90%;
+                height: 30px;
+                margin-top: 35px;
+            }
+            .fa-close{
+                font-size: 30px;
+                color: white;
+                margin-left: 10px;
+            }
+            .menu{
+                width: 100%;
+                height: 40px;
+                background: #00AEFF;
+            }
+            .menu ul li{
+                display: inline;
+                float: left;
+                margin-top: 2px;
+                width: 45%;
+                height: 25px;
+                text-align: center;
+                border-radius: 10px;
+                padding-top: 10px;
+                border: 1px solid blue;
+            }
+            .l1{
+                margin-left: 4%;
+                background: #00D3C5;
+            }
+                
+            .l2{
+                margin-left: 3%;
+            }
+            .l2:hover{
+                background: #00D3C5;
+            }
+            
+            .popMenu3{
+                width: 90%;
+                height: 400px;
+                background: white;
+                margin-left: 5%;
+                margin-top: 20%;
+                padding-top: 20px;
+                border-radius: 10px;
+            }
+            .popMenu3 h1{
+                margin-left: 10px;
+                color: #21FF00;
+                
+            }
+            .popMenu3 p{
+                margin-top: 10px;
+                font-size: 20px;
+            }
+            .fa-facebook , .fa-google{
+                padding: 20px;
+                font-size: 30px;
+                width: 30px;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 50%;
+                
+                margin-left: 40%;
+            }
+            .fa-facebook{
+                background:#3B5998;
+                color: white;
+                margin-top: 40px;
+            }
+            .fa-google{
+                background: #dd4b39;
+                color: white;
+            }
+            .or{
+                margin-left: 48%;
+            }
+            #alert{
+                color: red;
+                font-size: 15px;
+                margin-left: 5%;
+            }
+            .taskhed h2 {
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+            .taskbody{
+                width: 95%;
+                background: #00FFF2;
+                margin-left: 2.5%;
+                padding-top: 10px;
+            }
+            
+            .taskbody p {
+                margin-left: 10px;
+                margin-top: 10px ;
+            }
+            .tk {
+                width: 90%;
+                height: 50px;
+                background: #00CADD;
+                margin-left: 5%;
+                text-align: center;
+                padding-top: 10px;
+                border-radius: 19px;
+                margin-top: 15px;
+            }
+            .tk h3 {
+                margin-top: 10px;
+            }
+            
+        </style>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </head>
+    <body onload="load()">
+        <div id="pop1" class="pop1">
+            
+            <div class="popMenu">
+                <h2>Account </h2>
+                
+                
+                <h3 class="crt">Create Account</h3>
+                
+                
+                <form action="create" method="post" >
+                    {% csrf_token %}
+                    <input type="text" name="name" id="name" value="" placeholder="enter name" required=""/>
+                    <br />
+                    <input type="number" name="number" id="number" value="" placeholder="enter your phone number" required="" />
+                    <br />
+                    <input type="email" name="email" id="email" value="" placeholder="enter your email" required=""/>
+                    <br />
+                    <input type="submit" name="create" id="create" value="create" />
+                    
+                </form>
+                <h4>or</h4>
+                <h3 class="crt">Login</h3>
+                <form action="Login" method="post">
+                {% csrf_token %}
+                    
+                    <input type="email" name="name" id="LoginEmail" value="" placeholder="enter your email" required=""/>
+                    <br />
+                    
+                    <input type="submit" name="login" id="login" value="login" />
+        
+                    
+                    
+                </form>
+                
+                
+                <p class="chek" id="chek">{{pp}}</p>
+            </div>
+            
+            
+            
+            
+        </div>
+        
+        
+        <div id="pop2" class="pop2">
+            <li onclick="cloe()" class="fa fa-close"></li>
+            
+            
+            <div class="popMenu2">
+                
+                <a href="logout">
+                    <button>LogOut</button>
+                </a>
+                
+                
+            </div>
+            
+            
+        </div>
+        
+        
+        <div id="pop3" class="pop3">
+            <p onclick="pop3close()" class="fa fa-close"></p>
+            
+            
+            <p class="chek" id="walletchek">{{poop2}}</p>
+            
+            
+            
+            <div class="popMenu3">
+                <h1>Wallet verification</h1>
+                
+                <p>Login with..</p>
+                <a href="facebook">
+                <div class="fa fa-facebook">
+                </div>
+                    </a>
+                <br />
+                <h3 class="or">or</h3>
+                
+                <div class="fa fa-google">
+                    
+                </div>
+                <p id="alert">google verification is not available </p>
+            </div>
+            
+            
+            
+        </div>
+        
+        
+        
+        
+        
+        
+        <div class="hed">
+            <ul>
+                <li class="hedLi">Money</li>
+              <li onclick="logout()" id="accountIcon" class="fa fa-user-circle account"></li>
+            </ul>
+        </div>
+        
+        
+        
+    
+        <div class="menu">
+            
+            
+            <ul>
+                <li class="l1">Task</li>
+                <li onclick="Wallet()" class="l2">Wallet</li>
+            </ul>
+            
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="taskplace">
+            
+            <div class="taskhed">
+                
+                <h2>Daily Task </h2>
+                
+                
+            </div>
+            <p class="chek" id="taskck">{{cop}}</p>
+            
+            
+            <div class="taskbody">
+                <p>day 1</p>
+                
+                <a href="task?t=task1">
+                
+                <div id="task1" class="task1 tk">
+                  <h3>daily check in </h3>
+                  
+                </div>
+                
+                </a>
+                
+                
+                <a href="task?t=task2">
+                <div id="task2" class="task2 tk">
+                  <h3>Click Ad </h3>
+                  
+                </div>
+                </a>
+                
+                
+                <a href="task?t=task3">
+                
+                <div id="task3" class="task3 tk">
+                  <h3>Click Ad </h3>
+                  
+                </div>
+                
+                </a>
+                
+                
+                
+                
+                <a href="task?t=task4">
+                <div id="task4" class="task4 tk">
+                  <h3>Click Ad </h3>
+                  
+                </div>
+                </a>
+                
+                
+                <a href="task?t=task5">
+                
+                <div id="task5" class="task5 tk">
+                  <h3> Click Ad</h3>
+                  
+                </div>
+                
+                </a>
+                
+                
+
+
+
+
+
+
+                
+                
+                
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!--- js -->
+        <script type="text/javascript" charset="utf-8">
+            
+            popp=document.getElementById('chek').innerHTML
+            
+            if(popp=='True'){
+                document.getElementById('pop1').style.display="none"
+                
+                document.getElementById('accountIcon').style.color="green"
+            }else{
+                document.getElementById('pop1').style.display="block"
+                
+                document.getElementById('accountIcon').style.color="red"
+            }
+            
+            
+            function logout(){
+                
+                
+                document.getElementById('pop2').style.display="block"
+            }
+            
+            
+            function cloe(){
+                document.getElementById('pop2').style.display="none"
+            }
+            
+            
+            
+            
+            
+            function Wallet(){
+                
+                walletch=document.getElementById("walletchek").innerHTML
+                
+                if(walletch==="True"){
+                    window.location.replace("wallet");
+                }else{
+                    document.getElementById('pop3').style.display="block"
+                }
+            
+            }
+            
+            
+            function pop3close(){
+                document.getElementById('pop3').style.display="none"
+            }
+            
+            
+            
+            function load(){
+                tt=document.getElementById('taskck').innerHTML
+                
+                if(tt==="1"){
+                    document.getElementById("task1").style.background="green"
+                }else if(tt=="2"){
+                    
+                    document.getElementById("task1").style.background="green"
+                    document.getElementById("task2").style.background="green"
+                }else if(tt=="3"){
+                    document.getElementById("task1").style.background="green"
+                   document.getElementById("task2").style.background="green"
+                
+                   document.getElementById("task3").style.background="green"
+                }else if(tt=="4"){
+                    document.getElementById("task1").style.background="green"
+                    document.getElementById("task2").style.background="green"
+                    document.getElementById("task3").style.background="green"
+                    document.getElementById("task4").style.background="green"
+
+            }else if(tt=="5"){
+                document.getElementById("task1").style.background="green"
+                    document.getElementById("task2").style.background="green"
+                    document.getElementById("task3").style.background="green"
+                    document.getElementById("task4").style.background="green"
+                    document.getElementById("task5").style.background="green"
+            }
+            
+            }
+            
+            
+            
+        </script>
+        
+
+        
+        
+        
+    </body>
+</html>

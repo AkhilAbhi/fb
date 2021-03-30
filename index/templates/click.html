@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <style type="text/css">
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background: #00FFE9;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        p {
+            margin-top: 40px;
+            margin-left: 20px;
+            background: red;
+            text-align: center;
+            width: 90%;
+            height: 50px;
+            padding-top: 30px;
+            font-weight: bold;
+            color: white;
+        }
+        .count{
+            background: #0800FF;
+            width: 70%;
+            height: 70px;
+            margin-left: 15%;
+            margin-top: 40%;
+            text-align: center;
+            padding-top: 10px;
+            border-radius: 20px;
+        }
+        #ct{
+            font-size: 30px;
+            color: white;
+            margin-top: 10px;
+        }
+        #chek{
+            display: none;
+        }
+        a {
+            text-decoration: none;
+            
+        }
+        h3 {
+            color: white;
+            font-weight: bold; 
+            margin-top: 10px;
+            font-size: 30px;
+        }
+    </style>
+    
+    
+    <body onload="hello()">
+        
+        <div class="box">
+            <h2>About</h2> 
+            
+            <p>orderly complete task else show  errors</p>
+            
+            
+        </div>
+        
+        
+        <div id="c" class="count">
+       <h3 id="ct">10</h3>
+       
+        </div>
+        
+        <a href="complet?tname={{nm}}">
+            <div id="chek" class="count">
+                <h3>Chek In</h3>
+        
+            </div>
+        </a>
+        <script type="text/javascript" charset="utf-8">
+            i=10
+            setInterval(hello, 1000);
+            function hello(){
+                
+                if(i<=0){
+                    clearInterval(hello)
+                    document.getElementById("c").style.display="none"
+                    document.getElementById("chek").style.display="block"
+                }else{
+                    i=i-1
+                    document.getElementById("ct").innerHTML=i
+                    console.log(i)
+                }
+            }
+            
+            
+            
+        </script>
+        
+        
+        
+    </body>
+</html>
